@@ -1,0 +1,25 @@
+
+camel:
+  springboot:
+    # the name of Camel
+    name: SpringBootCamel
+  component:
+      servlet:
+        mapping:
+          contextPath: /camel-rest-jpa/*
+# what to say
+greeting: Hello World
+
+# how often to trigger the timer
+timer:
+  period: 2000
+
+# Spring Boot Actuator: all access to actuator endpoints without security
+management:
+  security:
+    enabled: false
+
+# Spring Boot Actuator: turn on actuator health check
+endpoints:
+  health:
+    enabled: true
