@@ -31,8 +31,16 @@ public class SampleCamelRouter extends RouteBuilder {
               .route().routeId("book-api")
               .inOut("direct:book");
       
-      from("direct:books").bean("bookRepository", "getAll");
       from("direct:book").bean("bookRepository", "getByIsbn(${header.id})");
+      
+      // use script expression in route
+      from("direct:books")
+      .choice()
+          .when().javaScript("request.headers.get('user') == 'admin'")
+          	.bean("bookRepository", "getByRole(\"admin\")")
+      .otherwise()
+      	// use script file in route
+          .to("language://javascript:resource:classpath:test-javascript.js?transform=false");
     }
 
 }

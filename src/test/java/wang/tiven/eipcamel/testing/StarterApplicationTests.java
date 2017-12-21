@@ -30,7 +30,13 @@ public class StarterApplicationTests {
 		exchange.setIn(new DefaultMessage(camelContext));
 		exchange = camelContext.createProducerTemplate().send("direct:books", exchange);
 		Message message = exchange.getIn();
-		assertEquals(9, ((List<Book>) message.getBody()).size());
+		assertEquals("jdk.nashorn.api.scripting.ScriptObjectMirror", message.getBody().getClass().getName());
+		
+		exchange.setIn(new DefaultMessage(camelContext));
+		Message in = exchange.getIn();
+		in.setHeader("user", "admin");
+		exchange = camelContext.createProducerTemplate().send("direct:books", exchange);
+		assertEquals(1, ((List<Book>)in.getBody()).size());
 	}
 
 	@Test
