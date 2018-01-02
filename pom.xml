@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>wang.tiven.eip-camel</groupId>
-	<artifactId>testing</artifactId>
+	<artifactId>quartz</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>EIP Camel :: Testing</name>
-	<description>Testing project for EIP Camel guides</description>
+	<name>EIP Camel :: Component :: Quartz</name>
+	<description>Quartz project for EIP Camel guides</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -72,17 +72,17 @@
 			<artifactId>camel-stream-starter</artifactId>
 		</dependency>
 		<dependency>
-      <groupId>org.apache.camel</groupId>
-      <artifactId>camel-servlet-starter</artifactId>
-    </dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-servlet-starter</artifactId>
+		</dependency>
 		<dependency>
-      <groupId>org.apache.camel</groupId>
-      <artifactId>camel-jackson-starter</artifactId>
-    </dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-jackson-starter</artifactId>
+		</dependency>
 		<dependency>
-      <groupId>org.apache.camel</groupId>
-      <artifactId>camel-swagger-java-starter</artifactId>
-    </dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-swagger-java-starter</artifactId>
+		</dependency>
 
 		<!-- Testing -->
 		<dependency>

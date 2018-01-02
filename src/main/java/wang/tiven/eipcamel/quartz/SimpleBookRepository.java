@@ -1,4 +1,4 @@
-package wang.tiven.eipcamel.testing;
+package wang.tiven.eipcamel.quartz;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,6 +20,12 @@ public class SimpleBookRepository implements BookRepository {
 	@Override
 	public Book getByIsbn(String isbn) {
 		return new Book(isbn, "This is book "+isbn);
+	}
+
+	@Override
+	public void check() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
