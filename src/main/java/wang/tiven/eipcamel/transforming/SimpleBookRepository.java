@@ -1,4 +1,4 @@
-package wang.tiven.eipcamel.testing;
+package wang.tiven.eipcamel.transforming;
 
 import java.util.ArrayList;
 import java.util.List;
