@@ -1,4 +1,4 @@
-package wang.tiven.eipcamel.testing;
+package wang.tiven.eipcamel.errorhandling;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package wang.tiven.eipcamel.testing;
+package wang.tiven.eipcamel.errorhandling;
 
 public class Book {
 

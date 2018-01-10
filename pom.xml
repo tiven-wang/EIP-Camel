@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>wang.tiven.eip-camel</groupId>
-	<artifactId>testing</artifactId>
+	<artifactId>error-handling</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>EIP Camel :: Testing</name>
-	<description>Testing project for EIP Camel guides</description>
+	<name>EIP Camel :: Error Handling</name>
+	<description>Error Handling project in EIP Camel guides</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

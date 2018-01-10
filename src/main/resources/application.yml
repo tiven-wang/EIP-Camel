@@ -23,3 +23,10 @@ management:
 endpoints:
   health:
     enabled: true
+
+# Logging level
+logging:
+  level:
+    wang:
+      tiven:
+        eipcamel: DEBUG
